@@ -1,0 +1,1 @@
+(()=>{"use strict";function o(o,n){return o+n}var n={name:"nino",age:25};console.log(n),n.age=35,console.log(n),console.log(Promise),console.log(o(123,456)),console.log(o(617,418)),console.log("hahahha"),console.log("nhnhnhnhhnnh"),console.log("nino")})();

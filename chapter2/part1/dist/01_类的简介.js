@@ -1,0 +1,28 @@
+"use strict";
+class Person {
+    constructor() {
+        /*
+        * 属性，方法
+        * */
+        /*
+        * 直接定义的属性是实例属性，需要通过对象的实例去访问
+        * 使用static开头的属性是静态属性，可以直接通过类去访问
+        *
+        * */
+        this.name = "nino";
+        this.hobby = "sleep";
+    }
+    /*
+    * 如果方法以static开头，则方法是类方法，可以直接通过类去调用
+    * */
+    sayHello() {
+        console.log('hello,typescript');
+    }
+}
+Person.age = 25;
+const p = new Person();
+console.log(p);
+p.name = 'rxlrxl';
+console.log(p);
+p.sayHello();
+console.log(Person.name, Person.age);

@@ -1,0 +1,43 @@
+{
+  //tsconfig.json是ts编译器的配置文件，ts编译器可以根据他的信息来对代码进行编译
+  "include": [
+    "./src/**/*"
+    //// ** 表示任意目录，* 表示任意文件
+  ],
+  "exclude": [
+    "node_modules",
+    "./src/hello/**/*"
+  ],
+  "compilerOptions": {
+    //target用来指定ts被编译为ES的版本
+    "target": "ES3",
+    //指定要使用的模块化的规范
+    "module": "ES2015",
+    //指定代码运行时所包含的库
+    //"lib": ["dom","es6"],
+    //编译后文件的所在目录
+    "outDir": "./dist",
+    //默认会将所有的编写在全局作用域中的代码合并为一个js文件，
+    //"outFile": "",
+    //是否对JS文件进行编译，默认是false
+    "allowJs": true,
+    //是否检查js代码是否符合语法规范，默认为false
+    "checkJs": true,
+    //是否移除注释
+    "removeComments": true,
+    //不生成编译后的文件
+    "noEmit": false,
+    //当有错误时不生成编译后的文件
+    "noEmitOnError": true,
+    //用来设置编译后的文件是否使用严格模式，默认false
+    "alwaysStrict": true,
+    //不允许隐式的any类型
+    "noImplicitAny": true,
+    //不允许不明确类型的this
+    "noImplicitThis": true,
+    //严格的检查空值
+    "strictNullChecks": true,
+    //所有严格检查的总开关
+    "strict": true
+  }
+}
